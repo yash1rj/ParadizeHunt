@@ -61,6 +61,7 @@
 
 /* Packages cards styling */
 .packages {
+	color:blue;
 	width:800px;
 	height:100%;
 	display:inline-block;
@@ -69,7 +70,7 @@
 	padding:10px;
 	margin-bottom:20px;
 	box-shadow:2px 2px 6px rgba(0,0,0,.3);
-	transition:box-shadow 500ms, background 1s;
+	transition:box-shadow 300ms, background 300ms;
 }
 
 /* Images in Packages cards */
@@ -104,7 +105,7 @@
 	border-radius:5px 5px 5px 5px;
 	padding:10px;
 	box-shadow:2px 2px 6px rgba(0,0,0,.3);
-	transition:box-shadow 500ms, background 1s;
+	transition:box-shadow 300ms, background 300ms;
 	float:left;
 	margin-top:30px;
 	margin-left:30px;
@@ -120,4 +121,14 @@
 
 .reg_link {
 	text-decoration:none;
+}
+
+.packages:hover {
+	box-shadow:5px 5px 20px rgba(0,0,0,.7);
+	background: rgb(131, 252, 126)
+}
+
+.contact-card:hover {
+	box-shadow:5px 5px 20px rgba(0,0,0,.7);
+	background: rgb(131, 252, 126)
 }
