@@ -1,0 +1,33 @@
+/* find more about it */
+* {
+	box-sizing:border-box;
+}
+
+/* no margin to body */
+body {
+	margin:0;
+}
+
+/* Right-align the last link */
+nav > ul > li:last-child {
+	float:right;
+}
+
+/* adjusting cover image */
+header > img {
+	width:100%;
+	height:300px;	
+	background-size:100%;
+}
+
+/* Centering main content */
+body > main {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+/* Styling footer */
+footer {
+	background-color:#3366ff;
+}
+	
