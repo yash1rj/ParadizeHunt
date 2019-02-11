@@ -1,0 +1,92 @@
+/* Styling navbar links */
+.navbar > ul > li > a {
+	text-decoration:none;
+	padding:14px 16px	;
+	display:block; /* Displaying the links as block elements makes the whole link area clickable (not just the text) */
+	text-align:center;
+	padding:14px 16px;
+	color:white;
+	background-color:#1f1f1f;
+}
+
+/* Styling list in navbar */
+.navbar ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden; /*overflow:hidden is added to the ul element to prevent li elements from going outside of the list. */
+	background-color:#778899; /* A background color is added to the links to show the link area. */
+	opacity:0.8;
+	position:fixed;
+	top:0;
+	width:100%;
+}
+
+/* horizontal navbar */
+.navbar li {
+	float:left; /* use float to get block elements to slide next to each other */
+}
+
+/* inner boundary on hovering */
+.navbar a:hover:not(.active) { /* No hovering effect on active link */
+	box-shadow:0 0 0 3px #00bfff inset;
+}
+
+/* Styling of active linls */
+.active {
+	background-color:#00bfff !important;
+	color:white !important;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+	float:left;
+	width:50%;
+	padding:15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+	.column {
+		width:100%;
+	}
+}
+
+/* Packages cards styling */
+.packages {
+	width:800px;
+	height:100%;
+	display:inline-block;
+	border: 1px solid #000;
+	border-radius:5px 5px 5px 5px;
+	padding:10px;
+	margin-bottom:20px;
+	box-shadow:2px 2px 6px rgba(0,0,0,.3);
+	transition:box-shadow 500ms, background 1s;
+}
+
+/* Images in Packages cards */
+.article-image {
+	height:300px;
+	width:100%;
+	border-radius:5px 5px 0 0;
+}
+
+/* Aligning package's places list to left */
+.packages ul {
+	text-align:left;
+}
+
+/* Register button for packages */
+.reg {
+	background-color:#1E90FF;
+	display:block;
+	border-radius:5px 5px 5px 5px;
+}
