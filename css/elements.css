@@ -30,8 +30,18 @@ body > main {
 footer {
 	background-color:#3366ff;
 }
-	
+
+/* Contact-us page Contact support */
 #support {
 	background-color:orange;
 	display:inline;
+}
+
+/* hr element in reg-confirm page */
+hr {
+	border:0;
+	height:55px;
+	background-image:url(../media/hr.png);
+	background-position:center;
+	background-repeat:no-repeat;
 }
