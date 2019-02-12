@@ -29,7 +29,7 @@
 
 /* inner boundary on hovering */
 .navbar a:hover:not(.active) { /* No hovering effect on active link */
-	box-shadow:0 0 0 3px #00bfff inset;
+	box-shadow:0 0 0 5px #00bfff inset;
 }
 
 /* Styling of active linls */
@@ -100,7 +100,7 @@
 /* Contact Us cards */
 .contact-card {
 	width:45%;
-	height:100%;
+	height:170px;
 	border: 1px solid #000;
 	border-radius:5px 5px 5px 5px;
 	padding:10px;
@@ -119,16 +119,134 @@
 	width:100%;
 }
 
+/* register button on index.html */
 .reg_link {
 	text-decoration:none;
 }
 
+/* hovering effect on packages cards */
 .packages:hover {
 	box-shadow:5px 5px 20px rgba(0,0,0,.7);
 	background: rgb(131, 252, 126)
 }
 
+/* hovering effect on contact cards */
 .contact-card:hover {
 	box-shadow:5px 5px 20px rgba(0,0,0,.7);
 	background: rgb(131, 252, 126)
+}
+
+/* reg-form table */
+.reg_tbl {
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+}
+
+/* reg-form table headers */
+.reg_tbl th {
+	color:white;
+}
+
+/* reg-form body */
+.rf-body {
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background:#34495e;
+}
+
+/* reg-form */
+.rf-form {
+	width:500px;
+	height:580px;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background:#191919;
+}
+
+/* reg-form styling inputs */
+.rf-form input[type="text"], .rf-form input[type="email"], .rf-form input[type="date"] {
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #3498db;
+	padding:14px 10px;
+	width:200px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+/* reg-form heading */
+.rf-main h3 {
+	color:white;
+	text-transform:uppercase;
+	font-weight:500;
+}
+
+/* focus effect on reg-form inputs */
+.rf-form input[type="text"]:focus, .rf-form input[type="email"]:focus, .rf-form input[type="date"]:focus {
+	width:260px;
+	border-color:#2ecc71;
+}
+
+/* styling reg-form submit button */
+.rf-form input[type="submit"] {
+	border:0;
+	background:none;
+	display:block;
+	margin:15px auto;
+	text-align:center;
+	border:2px solid #2ecc71;
+	padding:14px 30px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+
+/* hovering effect on reg-form submit button */
+.rf-form input[type="submit"]:hover {
+	background:#2ecc71;
+}
+
+/* styling reg-form mandatory fiels statement */
+.req {
+	color:white;
+	text-align:center;
+}
+
+/* styling reg-form cancel button */
+.cancel {
+	color:red;
+	display:block;
+	text-align:center;
+}
+
+/* hovering effect on reg-form cancel button */
+.cancel:hover {
+	border:2px solid red;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+/* star mark the required fields */
+.reg_tbl .reqrd::after {
+	content:"*";
+	color:red;
+}
+
+/* star mark before the mandatory field statement */
+.req::before {
+	content:"*";
+	color:red;
 }
