@@ -12,43 +12,47 @@
 		
 		<title>ParadizeHunt | HomePage</title>
 	</head>
-	<body>
+	<body class="rf-body">
 		<header>
 			<nav class="navbar">
 				<ul>
 					<li><a href="./index.html">ParadizeHunt</a></li>
-					<li><a class="active" href="./contact_us.html">Contact Us</a></li>
+					<li><a href="./contact_us.html">Contact Us</a></li>
 				</ul>
 			</nav>
 			<img src="./media/cover.jpg" alt="Paradise">
 		</header>
-		<main>
+		<main class="rf-main">
 			<h3>Register with ParadizeHunt</h3>
-			<form action="#">
+			<form action="reg_confirm.html"  class="rf-form">
 				<table>
 					<tr>
 						<th>Name :</th>
-						<td><input type="text" placeholder="first name" pattern="[a-zA-Z]+"></td>
+						<td><input type="text" placeholder="first name" pattern="[a-zA-Z]+" required="required"></td>
 					</tr>
 					<tr>
 						<th>Email :</th>
-						<td><input type="email" placeholder="abc@xyz.com"></td>
+						<td><input type="email" placeholder="abc@xyz.com" required="required"></td>
 					</tr>
 					<tr>
 						<th>Date of Birth :</th>
-						<td><input type="date"></td>
+						<td><input type="date" required="required"></td>
 					</tr>
 					<tr>
-						<th>Phobe Number :</th>
+						<th>Phone Number :</th>
 						<td><input type="text" placeholder="10 digit number" pattern="[1-9]{1}[0-9]{9}"></td>
 					</tr>
 					<tr>
-						<th></th>
-						<td>means required fields</td>
+						<td></td>
+						<td class="req">means required fields</td>
 					</tr>
 					<tr>
-						<th></th>
-						<td><input type="submit" value="Register"> &nbsp; &nbsp; &nbsp; <a href="./reg_form.html">Cancel</a></td>
+						<td></td>
+						<td><input type="submit" value="Register"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a class="cancel" href="./reg_form.html">Cancel</a></td>
 					</tr>
 				</table>
 			</form>
