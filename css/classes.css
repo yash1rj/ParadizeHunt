@@ -250,3 +250,13 @@
 	content:"*";
 	color:red;
 }
+
+/* header of rf-form table */
+.rf-form h3 {
+	text-align:center;
+}
+
+/* form inputs label */
+.rf-form th {
+	color:white !important;
+}
